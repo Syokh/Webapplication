@@ -38,10 +38,10 @@ public class ControllerRegister {
         boolean checkPass = checkLogic.checkPassword(password);
 
         if (username.equals("")) {
-            return "Please enter the User Name";
+            return "Please enter User Name";
         }
         if (!checkName){
-            return "This User Name can not be";
+            return "Enter correct User Name";
         }
 
         try {
@@ -55,13 +55,13 @@ public class ControllerRegister {
         }
 
         if (password.equals("")) {
-            return "Please enter the correct password";
+            return "Please enter Password";
         }
         if (!checkPass){
-            return "This Password can not be";
+            return "Enter a valid Password (at least 6 characters: a letter, a number, etc)";
         }
         if (!password.equals(password2)) {
-            return "Please enter bous the correct password";
+            return "Passwords mismatch";
         }
 
         PasswordHelper passwordHelper = new PasswordHelper();
@@ -80,7 +80,6 @@ public class ControllerRegister {
         newUser.setUserRoles(userRoleSet);
 
         serviceUser.save(newUser);
-        return "OK";
+        return "Your user is registered. Please login and have a fun!";
     }
-
 }
