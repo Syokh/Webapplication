@@ -44,6 +44,14 @@ public class User extends Model implements UserDetails {
         return password;
     }
 
+    public Set<UserRole> getUserRoles() {
+        return userRoles;
+    }
+
+    public void setUserRoles(Set<UserRole> userRoles) {
+        this.userRoles = userRoles;
+    }
+
     public void setPassword(String password) {
         this.password = password;
     }

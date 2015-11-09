@@ -24,11 +24,11 @@
         <processorPath useClasspath="true" />
         <module name="Ciklum" />
         <module name="Web" />
+        <module name="wievHrom" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
-      <module name="Ciklum" target="1.6" />
-      <module name="Web" target="1.5" />
+      <module name="wievHrom" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

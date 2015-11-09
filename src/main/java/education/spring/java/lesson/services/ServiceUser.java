@@ -35,4 +35,9 @@ public class ServiceUser implements UserDetailsService {
 
         return result;
     }
+    @Transactional
+    public void save(User user){
+        sessionFactory.getCurrentSession().save(user);
+    }
+
 }

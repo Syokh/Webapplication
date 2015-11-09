@@ -6,3 +6,4 @@ You can run the application through the tomcat, using war file or from the IDEA.
 UserName, Password
 admin, admin
 user,1111
+

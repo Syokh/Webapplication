@@ -19,12 +19,16 @@
 
     <p>
         <label for="password">Password:  </label>
-        <input type="text" id="password" name="password"/>
+        <input type="password" id="password" name="password"/>
     </p>
 
     <p>
         <input type="submit" value="Login" id="loginButton"/>
     </p>
+
+    <span class="login-box-options">
+New User?  <a href="register.jsp" style="margin-left:30px;">Register Here</a>
+    </span>
 </form>
 <p class="loginError">
     <c:if test="${param.error=='invalidLoginPassword'}">

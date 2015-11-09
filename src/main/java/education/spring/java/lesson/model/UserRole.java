@@ -30,4 +30,12 @@ public class UserRole extends Model {
     public void setListRole(ListRole listRole) {
         this.listRole = listRole;
     }
+
+    public Set<User> getUser() {
+        return user;
+    }
+
+    public void setUser(Set<User> user) {
+        this.user = user;
+    }
 }
