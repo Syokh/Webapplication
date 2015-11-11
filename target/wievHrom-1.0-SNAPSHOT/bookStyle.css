@@ -1,0 +1,85 @@
+html {
+    font-family: Calibri;
+    background-color: gray;
+}
+
+a {
+
+    color: blue;
+    font-size: 15pt;
+}
+
+#List {
+
+    color: black;
+    font-size: 18pt;
+}
+
+table.bookTable {
+
+    width: 600px;
+    font-size: 15px;
+    color: #333333;
+    text-align: center;
+    border-width: 1px;
+    background-color: #7abacd;
+    border-collapse: collapse;
+    margin: inherit;
+}
+
+table.bookTable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #c9321c;
+}
+
+table.bookTable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #608ec9;
+}
+
+h3 {
+
+    font-size: 18pt;
+}
+
+form {
+
+    color: white;
+    font-size: 15pt;
+    font-style: normal;
+    width: 400px;
+    background-color: #c1cd72;
+    border-collapse: collapse;
+    margin: inherit;
+    clear: both;
+    text-align: right;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+
+}
+
+label {
+    float: left;
+
+}
+
+#addBookSubmitBtn {
+    color: white;
+    font-size: 10pt;
+    font-style: normal;
+    width: 100px;
+    text-align: center;
+    background-color: #5c29cd;
+    height: 40px;
+    border: none;
+    margin: auto;
+    padding: 0;
+}
+
+
+

@@ -1,0 +1,46 @@
+#loginPage {
+	font-family: Calibri;
+	font-size: 22pt;
+	font-style: normal;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	text-decoration: underline
+}
+form {
+	font-family: Calibri;
+	color: white;
+	font-size: 15pt;
+	font-style: normal;
+	width: 400px;
+	text-align: right;
+	background-color: #4bcdcc;
+	border-collapse: collapse;
+	border: 22px solid navy;
+    margin: auto
+}
+#loginButton{
+	color: white;
+	font-size: 10pt;
+	font-style: normal;
+	width: 100px;
+	text-align: center;
+	background-color: #5c29cd;
+	height: 40px;
+	border: none;
+	margin: auto;
+	padding: 0;
+}
+p.loginError{
+	font-family: Calibri;
+	color: red;
+	font-size: 22pt;
+	text-align: center;
+}
+label {
+	float:left;
+}
+
+
+
+
