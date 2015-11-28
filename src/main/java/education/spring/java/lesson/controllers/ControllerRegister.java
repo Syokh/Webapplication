@@ -40,29 +40,35 @@ public class ControllerRegister {
         if (username.equals("")) {
             return "Please enter User Name";
         }
-        if (!checkName){
+        if (!checkName) {
             return "Enter correct User Name";
         }
 
         try {
             User user = (User) serviceUser.loadUserByUsername(username);
             String userUsername = user.getUsername();
-            if (userUsername.equals(username)){
+            if (userUsername.equals(username)) {
                 return "This User Name already exists";
             }
-        }catch (UsernameNotFoundException e){
+        } catch (UsernameNotFoundException e) {
             e.printStackTrace();
         }
 
         if (password.equals("")) {
             return "Please enter Password";
         }
-        if (!checkPass){
+        if (!checkPass) {
             return "Enter a valid Password (at least 6 characters: a letter, a number, etc)";
         }
         if (!password.equals(password2)) {
             return "Passwords mismatch";
         }
+
+        saveUser(username, password);
+        return "Your user is registered. Please login and have a fun!";
+    }
+
+    public void saveUser(String username, String password) {
 
         PasswordHelper passwordHelper = new PasswordHelper();
         String passwordEncode = passwordHelper.encode(password);
@@ -80,6 +86,5 @@ public class ControllerRegister {
         newUser.setUserRoles(userRoleSet);
 
         serviceUser.save(newUser);
-        return "Your user is registered. Please login and have a fun!";
     }
 }
